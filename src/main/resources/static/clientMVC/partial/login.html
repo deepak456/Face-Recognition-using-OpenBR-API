@@ -1,0 +1,46 @@
+ 
+<form class="form-horizontal" data-ng-submit="doRegistration(registration)" novalidate>
+<fieldset>
+
+<!-- Form Name -->
+<legend>Face Recognition</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name"></label> 
+  <div class="col-md-4">
+  <input name="name" type="file" file-model="myFile"  class="form-control" required>
+    
+  </div>
+</div>
+
+
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="anmelden"></label>
+  <div class="col-md-8">
+    <button  name="anmelden" class="btn btn-success" type="submit" data-ng-click="submitted=true" style="width:20%">Submit</button>
+    <button  name="reset" class="btn btn-danger"  style="width:20%">Reset</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<div data-ng-if="flas">
+<h1>Matching Image : </h1>
+<table ng-repeat="(key, value) in result">
+<tr>
+<td>
+<img data-ng-src="{{key}}">
+</td>
+</tr>
+<tr>
+<td>{{value}}</td>
+</tr>
+</table>
+</div>
+
+<div data-ng-if="notFound">
+<h1>Image Not Found! </h1>
+</div>
+ 

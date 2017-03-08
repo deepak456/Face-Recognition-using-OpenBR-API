@@ -1,0 +1,55 @@
+.horizontal-animation {
+    background: none repeat scroll 0 0 #f2f2f2;
+    border: 2px solid #ccc;
+    color: white;
+    margin-bottom: 2px;
+    padding-left: 0;
+    position: absolute;
+    top: 16em;
+    transition: all 0.5s linear 0s;
+    width: 25px;
+    z-index: 2147483646;
+}
+.horizontal-animation.on {
+  width:200px;
+  transition: all 0.5s linear 0s;
+}
+.nav_width a{
+	width:195px!important;
+	transition: all 0.5s linear 0s;
+}
+
+#veil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999999999999999999;
+	height:100%;
+	width:100%;
+	cursor: not-allowed;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	background: #000000  no-repeat center;
+}
+#feedLoading {
+	position: fixed;
+	top: 200px;
+ 	z-index: 9999999999999999999998;
+	width:100%;
+	text-align: center;
+	font-size: 4em;
+	color:white;
+	text-shadow: 2px 2px 2px #021124;
+}
+
+
+
+.sliderArrow {
+	color:powderblue;
+	cursor:default !important;
+	position: relative;
+    top: 45%;
+}
+
+
+
